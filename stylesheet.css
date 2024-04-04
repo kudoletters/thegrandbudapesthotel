@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope.ttf');
+}
+@font-face {
+    font-family: 'Rosella Inline';
+    src: url('fonts/Rosella-Inline.ttf');
+}
+@font-face {
+    font-family: 'AimaDisplay Regular';
+    src: url('fonts/AimaDisplay-Regular.otf');
+}
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('fonts/Abril-Fatface.ttf')
+}
+@font-face {
+    font-family: 'Storia Lettering';
+    src: url('fonts/Storia-Lettering.otf')
+}
+
+
+
+/* general setting */
+* {
+    font-family: Manrope;
+    color: #ffedf8;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    text-align: left;
+    background: #EA8EB3;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+table {
+    width: 1000px;
+    border: 0px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+  display: block;
+}
+
+
+
+/* nav bar */
+.nav {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav td {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav td a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+    font-family: Storia Lettering;
+    color: #fedd97;
+    padding: 7px 10px 0px 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.nav:hover td a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+}
+.nav td a:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: #EA8EB3;
+}
+.nav td a:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fedd97;
+    transition: 0.5s;
+    transform-origin:right;
+    transform: scaleX(0);
+    z-index: -1;
+    border-radius: 25px;
+}
+.nav td a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+
+/* back to top */
+.button {
+    text-align: center;
+} 
+.button a {
+    text-decoration: none;
+    background-color: #f0b0ca;
+    color: #EA8EB3;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    transition: 1s;
+}
+.button a:hover {
+    background-color: #fedd97;
+    color: #EA8EB3;
+    transition: 1s;
+}
+
+
+
+/* headings */
+.h1 {
+    font-family: AimaDisplay Regular;
+    font-size: 50px;
+    color: #fedd97;
+    text-align: center;
+    margin: -15px 0 -20px 0;
+}
+.heading {
+    border-top: 1px solid #fedd97;
+    border-bottom: 1px solid #fedd97;
+}
+.h2 {
+    font-family: Abril Fatface;
+    font-size: 30px;
+    color: #fedd97;
+}
+.h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+/* awards */
+.awards {
+    border-collapse: separate;
+}
+.awards tbody {
+    display: block;
+    border-spacing: 10px;
+    margin: -10px;
+}
+.awards td {
+    background-color: #ffedf8;
+    border-radius: 20px;
+    width: 242.5px;
+    padding: 0px 25px 5px 25px;
+    vertical-align: baseline;
+}
+.awards p, .awards li {
+    color: #EA8EB3;
+}
+.awards ul {
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+
+
+/* cast images */
+.cast1, .cast2 {
+    text-align: center;
+}
+.cast1 img, .cast2 img {
+    border-radius: 20px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cast1 img {
+    width: 320px;
+}
+.cast2 img {
+    width: 237px;
+}
+
+
+
+/* scenes */
+.scenes img {
+    height: 350px;
+    display: inline;
+}
+.scenes {
+    text-align: center;
+}
+
+
+
+/* playlist */
+.playlist td {
+    text-align: center;
+}
+
+
+
+/* references links */
+.ref {
+    border-collapse: separate;
+    display: block;
+    border-spacing: 30px;
+    margin-left: -30px;
+}
+.ref ul {
+    margin: -20px 0 0 -20px;
+}
+.ref a {
+    text-decoration: none;
+}
+.ref a:hover {
+    color: #EA8EB3;
+    background-color: #ffedf8;
+}
